@@ -39,7 +39,7 @@ export async function createUser(req, res) {
             age: 35,
             hobbies: ['reading']
         }
-
+        console.log(user)
         const newUser = create(user)
 
         res.writeHead(201, {'Content-Type': 'application/json'})
